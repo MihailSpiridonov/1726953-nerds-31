@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Михаил Спиридонов](https://up.htmlacademy.ru/htmlcss/31/user/1726953).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Пак](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
