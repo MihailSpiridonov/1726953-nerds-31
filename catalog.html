@@ -27,11 +27,17 @@
             <form method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Стоимость:</legend>
-                    <div class="range-min">
-                        <lable>от<input type="number" min="0" max="100000" step="100" name="min_cost" placeholder="0"></input></lable>
-                    </div>
-                    <div class="range-max">
-                        <lable>до<input type="number" min="0" max="100000" step="100" name="max_cost" placeholder="15000"></input></lable>  
+                    <ul>
+                        <li><lable>от<input type="number" min="0" max="100000" step="100" name="min_cost" placeholder="0"></lable></li>
+                        <li><lable>до<input type="number" min="0" max="100000" step="100" name="max_cost" placeholder="15000"></lable></li>
+                    </ul>
+                    <div>
+                        <div class="range-min">
+                            <button type="button" name="range"></button>
+                        </div>
+                        <div class="range-max">
+                            <button type="button" name="range"></button>
+                        </div>
                     </div>
                 </fieldset>
                 <fieldset>
