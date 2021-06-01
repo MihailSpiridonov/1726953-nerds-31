@@ -1,5 +1,5 @@
 
-/* fonts start*/
+/* fonts start */
 
 @font-face {
     font-family: "Roboto";
@@ -26,17 +26,290 @@
     src: local("Roboto");
     src: url(fonts/robotobold.woff2) format(woff2);
     src: url(fonts/robotobold.woff) format(woff);
+}
 
-/* fonts end*/
+/* fonts end */
 
-/* variables start*/
+/* variables start */
 
 :root {
     --basic-black: #000000;
+    --basic-lightblack: #283136;
     --basic-red: #FB565A;
+    --cpecial-red:  #E74246;
+    --cpecial-darkred: #D7373B;
     --basic-lightgrey: #EEEEEE;
-    --basic-grey: #283136;
+    --basic-darkwhite: #888888;
     --basic-white: #ffffff;
 }
 
-/* variables end*/
+/* variables end */
+
+/* global start */
+
+body {
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--basic-lightblack);
+}
+
+a {
+    color: var(--basic-black);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* global end */
+
+/* header start */
+
+.main-nav {
+    line-height: 30px;
+    font-weight: 500;
+    color: var(--basic-black);
+    background: var(--basic-lightgrey);
+}
+
+.main-header-logo:hover {
+    opacity: 0.6;
+}
+
+.main-header-logo:active,
+.main-header-logo:focus{
+    opacity: 0.3;
+}
+
+.site-nav {
+    list-style: none;
+}
+
+.site-nav-item:hover a,
+.site-nav-item a:focus,
+.basket:hover,
+.basket:focus{
+    color: var(--basic-red);
+}
+
+.site-nav-item:active a,
+.basket:active{
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+/* header end */
+
+/* slider start */
+
+.slider {
+    background: var(--basic-lightgrey);
+}
+
+.slider-slogan {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--basic-black);
+}
+
+.slider-btn {
+    vertical-align: bottom;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.container-slider-btn {
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    background: var(--basic-red);
+}
+
+.container-slider-btn:hover,
+.container-slider-btn:focus {
+    background: var(--cpecial-red);
+}
+
+.container-slider-btn:active {
+    background: var(--cpecial-darkred);
+}
+
+.slider-btn:active {
+    opacity: 0.3;
+}
+
+/* slider end */
+
+/* servies start */
+.servies-list {
+    list-style: none;
+}
+
+.servies-item-subtitle {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.btn {
+    width: 160px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background: var(--basic-red);
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--cpecial-red);
+} 
+
+.btn:active {
+    background: var(--cpecial-darkred);
+}
+
+.btn-text:active {
+    opacity: 0.3;
+}
+
+/* servies end */
+
+/* about-company start */
+
+.about-company-slogan {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color: var(--basic-black);
+}
+
+.about-company-list-subtitle {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-company-list {
+    list-style: none;
+}
+
+/* about-company end */
+
+/* feature start */
+
+.feature-subtitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.feature-list {
+    list-style: none;
+}
+
+.feature-number {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--basic-black);
+}
+
+.percent {
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.feature-text {
+    line-height: 18px;
+}
+
+/* feature end */
+
+/* clients start */
+
+.clients-list {
+    list-style: none;
+}
+
+.clients-link{
+    opacity: 0.2;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    opacity: 1;
+}
+
+.clients-link:active {
+    opacity: 0.1;
+}
+
+/* clients end */
+
+/* footer start */
+/* contacts start */
+
+.contacts-subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.contacts-address,
+.contacts-tel {
+    line-height: 18px;
+    color: #666666;
+}
+
+.contacts-btn {
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background: var(--basic-red);
+}
+
+/* contacts end */
+
+/* socials start */
+
+.socials-list {
+    list-style: none;
+}
+
+.socials-subtitle {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--basic-black);
+}
+
+.socials-text {
+    line-height: 22px;
+    color: #444444;;
+}
+
+/* socials end */
+/* footer end */
+
+
+/* catalog start */
+
+/* catalog end */
