@@ -5,27 +5,27 @@
     font-family: "Roboto";
     font-weight: 400;
     font-style: normal;
-    src: local("Roboto");
-    src: url(fonts/roboto.woff2) format(woff2);
-    src: url(fonts/roboto.woff) format(woff);
+    src: local("Roboto"),
+         url(../fonts/roboto.woff2) format(woff2),
+         url(../fonts/roboto.woff) format(woff);
 }
   
 @font-face {
     font-family: "Roboto";
     font-weight: 500;
     font-style: normal;
-    src: local("Roboto");
-    src: url(fonts/robotomedium.woff2) format(woff2);
-    src: url(fonts/robotomedium.woff) format(woff);
+    src: local("Roboto"),
+         url(../fonts/robotomedium.woff2) format(woff2),
+         url(../fonts/robotomedium.woff) format(woff);
 }
   
 @font-face {
     font-family: "Roboto";
     font-weight: 700;
     font-style: normal;
-    src: local("Roboto");
-    src: url(fonts/robotobold.woff2) format(woff2);
-    src: url(fonts/robotobold.woff) format(woff);
+    src: local("Roboto"),
+         url(../fonts/robotobold.woff2) format(woff2),
+         url(../fonts/robotobold.woff) format(woff);
 }
 
 /* fonts end */
@@ -38,8 +38,18 @@
     --basic-red: #FB565A;
     --cpecial-red:  #E74246;
     --cpecial-darkred: #D7373B;
+    --basic-green: #00CA74;
+    --cpecial-green:  #00BC6C;
+    --cpecial-darkgreen: #00AA62;
+    --basic-yellow: #EFC849;
+    --cpecial-yellow:  #EAB534;
+    --cpecial-darkyellow: #E5A722;
     --basic-lightgrey: #EEEEEE;
+    --special-lightgrey: #DFDFDF;
+    --special-darkgrey: #D5D5D5;
     --basic-darkwhite: #888888;
+    --basic-grey: #666666;
+    --special-grey: #444444;
     --basic-white: #ffffff;
 }
 
@@ -107,19 +117,25 @@ img {
     opacity: 0.3;
 }
 
+.active {
+    border-bottom: 2px solid var(--basic-red);
+}
+
 /* header end */
 
-/* slider start */
+/* slider start */ /* main-inner start */  /* filter start */
 
 .slider {
     background: var(--basic-lightgrey);
 }
 
-.slider-slogan {
+.slider-slogan,
+.inner-title {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
     color: var(--basic-black);
+    background: var(--basic-lightgrey);
 }
 
 .slider-btn {
@@ -150,9 +166,53 @@ img {
     opacity: 0.3;
 }
 
-/* slider end */
+.filter-cost-subtitle,
+.filter-grid-subtitle,
+.filter-functional-subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.filter-cost-list,
+.filter-grid-list,
+.filter-functional-list {
+    list-style: none;
+}
+
+.filter-cost-text {
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.filter-grid-text,
+.filter-functional-text {
+    line-height: 20px;
+}
+
+.filter-btn {
+    background: var(--basic-lightgrey);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background: var(--special-lightgrey);
+}
+
+.filter-btn:active {
+    background: var(--special-darkgrey);
+}
+
+.filter-btn-text {
+    opacity: 0.3;
+}
+
+/* slider end */  /* main-inner end */  /* filter end */
 
 /* servies start */
+
 .servies-list {
     list-style: none;
 }
@@ -276,7 +336,7 @@ img {
 .contacts-address,
 .contacts-tel {
     line-height: 18px;
-    color: #666666;
+    color: var(--basic-grey);
 }
 
 .contacts-btn {
@@ -303,7 +363,7 @@ img {
 
 .socials-text {
     line-height: 22px;
-    color: #444444;;
+    color: var(--special-grey);
 }
 
 /* socials end */
