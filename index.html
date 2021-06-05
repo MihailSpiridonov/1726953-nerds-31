@@ -16,75 +16,86 @@
 
 <!-- header start-->
 
-	<header class="main-header">
-		<nav class="main-nav">
-			<a class="main-header-logo">
-				<img src="img/nerds_logo.svg" width="160" height="65" alt="Логотип дизайн-студии: Нёрдс">
-			</a>
-			<ul class="site-nav">
-				<li class="site-nav-item"><a href="blank.html">Студия</a></li>
-				<li class="site-nav-item"><a href="blank.html">Клиенты</a></li>
-				<li class="site-nav-item"><a href="blank.html">Магазин</a></li>
-				<li class="site-nav-item"><a href="blank.html">Контакты</a></li>
-			</ul>
-			<a class="basket" href="blank.html">Корзина</a>
-		</nav>	
-	</header>
-
+	<div class="wrapper-background">
+		<header class="main-header">
+			<nav class="main-nav">
+				<a class="main-header-logo">
+					<img src="img/nerds_logo.svg" width="160" height="65" alt="Логотип дизайн-студии: Нёрдс">
+				</a>
+				<div class="site-nav-wrapper">
+					<ul class="site-nav">
+						<li class="site-nav-item"><a href="blank.html">Студия</a></li>
+						<li class="site-nav-item"><a href="blank.html">Клиенты</a></li>
+						<li class="site-nav-item"><a href="blank.html">Магазин</a></li>
+						<li class="site-nav-item"><a href="blank.html">Контакты</a></li>
+					</ul>
+				</div>
+				<a class="basket" href="blank.html">Корзина</a>
+			</nav>	
+		</header>
+	
 <!-- header end -->
+	
+		<!-- main start-->
+	
+		<main class="wrapper">
+			<h1>Студия дизайна - Нёрдс</h1>
 
-<!-- main start-->
-
-	<main class="wrapper">
-		<h1>Студия дизайна - Нёрдс</h1>
-
-<!-- slider start-->		
-
-		<section class="slider">
-			<h2>Наш подход к работе</h2>
-			<p class="slider-slogan">
-				Долго, дорого, скрупулезно.
-			</p>
-			<p class="slider-text">
-				Математически выверенный дизайн для вашего сайта или мобильного приложения.
-			</p>
-				<a class="slider-btn" href="blank.html">Узнать больше</a>
-		</section>
-
+<!-- slider start-->
+		
+		<div class="slider-wrapper"	>
+			<section class="slider">
+				<h2>Наш подход к работе</h2>
+				<p class="slider-slogan">
+					Долго, дорого, скрупулезно.
+				</p>
+				<p class="slider-text">
+					Математически выверенный дизайн для вашего сайта или мобильного приложения.
+				</p>
+					<a class="slider-btn" href="blank.html">Узнать больше</a>
+			</section>
+			<div class="wrapper-image">
+				<img src="img/slide_1_image.png" width="760" height="431" alt="Три мобильных телефона">
+			</div>
+		</div>
+</div>	
+	
 <!-- slider end-->
 
 <!-- servies start-->
 
-		<section class="servies">
-			<h2>Ассортимент</h2>
-			<ul class="servies-list">
-				<li class="servies-item">
-					<h3 class="servies-item-subtitle">Веб-сайты</h3>
-					<p class="servies-item-text">
-						Мир никогда не будет прежним после того как увидит ваш сайт!
-					</p>
+	<section class="servies">
+		<h2>Ассортимент</h2>
+		<ul class="servies-list">
+			<li class="servies-item">
+				<h3 class="servies-item-subtitle">Веб-сайты</h3>
+				<p class="servies-item-text">
+					Мир никогда не будет прежним после того как увидит ваш сайт!
+				</p>
+				<button class="btn" type="button">Заказать</button>
+			</li>
+			<li class="servies-item">
+				<h3 class="servies-item-subtitle">Приложения</h3>
+				<p class="servies-item-text">
+					Покорите топ-10 приложений в AppStore и Google Play
+				</p>
+				<button class="btn" type="button">Заказать</button>
+			</li>
+			<li class="servies-item">
+				<h3 class="servies-item-subtitle">Презентации</h3>
+				<p class="servies-item-text">
+					Вы даже не подозреваете, насколько вы изумительны!
+				</p>
+				<form>
 					<button class="btn" type="button">Заказать</button>
-				</li>
-				<li class="servies-item">
-					<h3 class="servies-item-subtitle">Приложения</h3>
-					<p class="servies-item-text">
-						Покорите топ-10 приложений в AppStore и Google Play
-					</p>
-					<button class="btn" type="button">Заказать</button>
-				</li>
-				<li class="servies-item">
-					<h3 class="servies-item-subtitle">Презентации</h3>
-					<p class="servies-item-text">
-						Вы даже не подозреваете, насколько вы изумительны!
-					</p>
-					<form>
-						<button class="btn" type="button">Заказать</button>
-					</form>	
-				</li>
-			</ul>
-		</section>
+				</form>	
+			</li>
+		</ul>
+	</section>
 
 <!-- servies end-->
+
+	<div class="wrapper-about-company-and-feature">
 
 <!-- about-company start-->
 
@@ -147,65 +158,70 @@
 		</section>
 
 <!-- feature end-->
+	</div>
 
 <!-- clients start-->
 
-		<section class="clients">
-			<h2>Наши клиенты</h2>
-			<ul class="clients-list">
-				<li class="clients-item">
-					<a class="clients-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="clients-logo" src="img/logo_htmlacademy.svg" width="199" height="57" alt="Логотип htmlacademy">
-					</a>
-				</li>
-				<li class="clients-item">
-					<a class="clients-link" href="blank.html"><img class="clients-logo" src="img/logo_borodinski.svg" width="209" height="90" alt="Логотип барбершопера Бородинский">
-					</a>
-				</li>
-				<li class="clients-item">
-					<a class="clients-link" href="blank.html"><img class="clients-logo" src="img/logo_pink.svg" width="185" height="52" alt="Логотип компании pink">
-					</a>
-				</li>
-				<li class="clients-item">
-					<a class="clients-link" href="blank.html"><img class="clients-logo" src="img/logo_mishka.svg" width="173" height="84" alt="Логотип компании mishka">
-					</a>
-				</li>
-			</ul>
-		</section>
-	</main>
+	<section class="clients">
+		<h2>Наши клиенты</h2>
+		<ul class="clients-list">
+			<li class="clients-item">
+				<a class="clients-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="clients-logo" src="img/logo_htmlacademy.svg" width="199" height="57" alt="Логотип htmlacademy">
+				</a>
+			</li>
+			<li class="clients-item">
+				<a class="clients-link" href="blank.html"><img class="clients-logo" src="img/logo_borodinski.svg" width="209" height="90" alt="Логотип барбершопера Бородинский">
+				</a>
+			</li>
+			<li class="clients-item">
+				<a class="clients-link" href="blank.html"><img class="clients-logo" src="img/logo_pink.svg" width="185" height="52" alt="Логотип компании pink">
+				</a>
+			</li>
+			<li class="clients-item">
+				<a class="clients-link" href="blank.html"><img class="clients-logo" src="img/logo_mishka.svg" width="173" height="84" alt="Логотип компании mishka">
+				</a>
+			</li>
+		</ul>
+	</section>
+</main>
 
 <!-- clients end-->
-<!-- main end -->
+<!-- main end -->	
 
 <!-- footer -->
 
 	<footer class="page-footer">
 		<img class="page-footer-map" src="img/address_map.png" width="1440" height="416" alt="Дизайн-студия NЁRDS находится по адресу наб. Реки Карповки, 5 лит П, Санкт-Петербург">
-			<section class="contacts">
-				<h2>Контакты</h2>
-				<h3 class="contacts-subtitle">Nёrds Design Studio</h3>
-				<p class="contacts-address">
-					наб. Реки Карповки, 5 лит П, Санкт-Петербург 
-					<a class="contacts-tel" href="tel:+78005558628">+7 800 555-86-28</a>
-				</p>
-				<a class="contacts-btn" href="blank.html">Напишите нам</a>
-			</section>
+		<section class="contacts">
+			<h2>Контакты</h2>
+			<h3 class="contacts-subtitle">Nёrds Design Studio</h3>
+			<p class="contacts-address">
+				наб. Реки Карповки, 5 лит П, Санкт-Петербург 
+				<a class="contacts-tel" href="tel:+78005558628">+7 800 555-86-28</a>
+			</p>
+			<a class="contacts-btn" href="blank.html">Напишите нам</a>
+		</section>
 		<section class="socials">
 			<h2>Ссылки на социальные сети</h2>
-			<ul class="socials-list">
-				<li class="socials-item">
-					<a class="socials-link" href="blank.html"><img class="socials-vk" src="https://via.placeholder.com" width="81" height="81" alt="Логотип вконтакте"></a>
-				</li>
-				<li class="socials-item">
-					<a class="socials-link" href="blank.html"><img class="socials-fb" src="https://via.placeholder.com" width="81" height="81" alt="Логотип фейсбук"></a>
-				</li>
-				<li class="socials-item">
-					<a class="socials-link" href="blank.html"><img class="socials-inst" src="https://via.placeholder.com" width="81" height="81" alt="Логотип инстаграм"></a>
-				</li>
-			</ul>
-			<h3 class="socials-subtitle">Давайте дружить, это выгодно!</h3>
-			<p class="socials-text">
-				Скидка 10% для друзей из социальных сетей.
-			</p>
+			<div class="wrapper-socials">
+				<ul class="socials-list">
+					<li class="socials-item">
+						<a class="socials-link" href="blank.html"><img class="socials-vk" src="https://via.placeholder.com" width="81" height="81" alt="Логотип вконтакте"></a>
+					</li>
+					<li class="socials-item">
+						<a class="socials-link" href="blank.html"><img class="socials-fb" src="https://via.placeholder.com" width="81" height="81" alt="Логотип фейсбук"></a>
+					</li>
+					<li class="socials-item">
+						<a class="socials-link" href="blank.html"><img class="socials-inst" src="https://via.placeholder.com" width="81" height="81" alt="Логотип инстаграм"></a>
+					</li>
+				</ul>
+				<div class="wrapper-socials-text">
+					<h3 class="socials-subtitle">Давайте дружить, это выгодно!</h3>
+				<p class="socials-text">
+					Скидка 10% для друзей из социальных сетей.
+				</p>
+				</div>
+			</div>
 		</section>
 	</footer>
   </body>
