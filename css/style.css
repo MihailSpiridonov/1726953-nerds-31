@@ -67,7 +67,7 @@
 .page-body {
     min-width: 1160px;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -95,18 +95,25 @@ img {
     height: 100%;
 }
 
+.center {
+    padding: 0 140px;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrapper-inner {
+    margin-top: -40px;
+}
+
 /* global end */
 
 /* header start */
 
-.main-header {
-    min-width: 1160px;
-    margin-bottom: 9px;
-}
-
 .main-nav {
-    display: grid;
-    grid-template-columns: 160px 1fr min-content;
     line-height: 30px;
     font-weight: 500;
     color: var(--basic-black);
@@ -125,11 +132,8 @@ img {
     opacity: 0.3;
 }
 
-.site-nav-wrapper {
-    justify-self: center;
-}
-
 .site-nav {
+    justify-self: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -160,7 +164,7 @@ img {
     background: var(--basic-lightgrey);
 }
 
-.site-nav-wrapper-catalog {
+.site-nav-catalog {
     margin-bottom: 87px;
 }
 
@@ -168,10 +172,13 @@ img {
 
 /* slider start */ /* main start */  /* main-inner start */
 
-.wrapper {
-    width: 1160px;
-    margin: 0 auto;
-    padding: 0 10px;
+.main-wrapper-background {
+    background: var(--basic-white);
+}
+
+.main-page h1 {
+    margin: 0;
+    padding: 0;
 }
 
 .slider-wrapper {
@@ -179,8 +186,28 @@ img {
     grid-template-columns: 1fr 760px;
 }
 
+.slide-1 {
+    z-index: 3;
+}
+
+.slide-2 {
+    position: absolute;
+    top: 114px;
+    z-index: 2;
+}
+
+.slide-3 {
+    position: absolute;
+    z-index: 1;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
 .inner-title {
-    margin-bottom: 108px;
+    padding-bottom: 108px;
+    margin-bottom: 163px;
 }
 
 .slider-slogan,
@@ -221,11 +248,7 @@ img {
 
 .wrapper-sorting {
     display: grid;
-    grid-template-columns: min-content 1fr;
-}
-
-.wrapper-sorting-type {
-    justify-self: end;
+    grid-template-columns: 1fr min-content min-content;
 }
 
 .wrapper-sorting-and-filter {
@@ -585,6 +608,11 @@ input[disabled] + .block {
     padding-bottom: 68px;
 }
 
+.page-footer-map {
+    width: 100%;
+    padding: 0;
+}
+
 .contacts-subtitle {
     font-weight: bold;
     font-size: 18px;
@@ -616,9 +644,6 @@ input[disabled] + .block {
 }
 
 .socials-list {
-    display: grid;
-    grid-template-columns: min-content min-content min-content;
-    gap: 9px;
     margin: 68px 140px;
     list-style: none;
 }

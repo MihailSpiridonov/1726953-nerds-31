@@ -12,59 +12,82 @@
 	<link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body class="page-body">
+  <body class="page-body wrapper">
 
 <!-- header start-->
 
-	<div class="wrapper-background">
-		<header class="main-header">
+		<header class="wrapper-background center">
 			<nav class="main-nav">
 				<a class="main-header-logo">
 					<img src="img/nerds_logo.svg" width="160" height="65" alt="Логотип дизайн-студии: Нёрдс">
 				</a>
-				<div class="site-nav-wrapper">
 					<ul class="site-nav">
 						<li class="site-nav-item"><a href="blank.html">Студия</a></li>
 						<li class="site-nav-item"><a href="blank.html">Клиенты</a></li>
 						<li class="site-nav-item"><a href="blank.html">Магазин</a></li>
 						<li class="site-nav-item"><a href="blank.html">Контакты</a></li>
 					</ul>
-				</div>
 				<a class="basket" href="blank.html">Корзина</a>
 			</nav>	
 		</header>
 	
 <!-- header end -->
 	
-		<!-- main start-->
+<!-- main start-->
 	
-		<main class="wrapper">
+		<main class="main-page main-wrapper-background">
 			<h1>Студия дизайна - Нёрдс</h1>
 
 <!-- slider start-->
 		
-		<div class="slider-wrapper"	>
-			<section class="slider">
+			<section class="slider wrapper-background center">
 				<h2>Наш подход к работе</h2>
-				<p class="slider-slogan">
-					Долго, дорого, скрупулезно.
-				</p>
-				<p class="slider-text">
-					Математически выверенный дизайн для вашего сайта или мобильного приложения.
-				</p>
-					<a class="slider-btn" href="blank.html">Узнать больше</a>
-			</section>
-			<div class="wrapper-image">
-				<img src="img/slide_1_image.png" width="760" height="431" alt="Три мобильных телефона">
-			</div>
-		</div>
-</div>	
+				<div class="all-sliders-wrapper">
+					<div class="slider-wrapper slide-1">
+						<div class="slider-wrapper-text">
+							<p class="slider-slogan">
+								Долго, дорого, скрупулезно.
+							</p>
+							<p class="slider-text">
+								Математически выверенный дизайн для вашего сайта или мобильного приложения.
+							</p>
+								<a class="slider-btn" href="blank.html">Узнать больше</a>
+						</div>
+						<img src="img/slide_1_image.png" width="760" height="431" alt="Три мобильных телефона">
+					</div>
+					<div class="slider-wrapper slide-2 hidden">
+						<div class="slider-wrapper-text">
+							<p class="slider-slogan">
+								Любим математику как никто другой
+							</p>
+							<p class="slider-text">
+								Никакого креатива, только математические формулы для расчета идеальных пропорций
+							</p>
+								<a class="slider-btn" href="blank.html">Узнать больше</a>
+						</div>
+						<img src="img/slide_2_image.png" width="760" height="431" alt="Два планшета">
+					</div>
+					<div class="slider-wrapper slide-3 hidden">
+						<div class="slider-wrapper-text">
+							<p class="slider-slogan">
+								Только ночь, только хардкор
+							</p>
+							<p class="slider-text">
+								Работать днем, как все? Мы против этого.
+								Ближе к полуночи работа только начинается.
+							</p>
+								<a class="slider-btn" href="blank.html">Узнать больше</a>
+						</div>
+						<img src="img/slide_3_image.png" width="760" height="431" alt="Планшет и телефон">
+					</div>
+				</div>
+			</section>	
 	
 <!-- slider end-->
 
 <!-- servies start-->
 
-	<section class="servies">
+	<section class="servies center">
 		<h2>Ассортимент</h2>
 		<ul class="servies-list">
 			<li class="servies-item">
@@ -86,20 +109,18 @@
 				<p class="servies-item-text">
 					Вы даже не подозреваете, насколько вы изумительны!
 				</p>
-				<form>
-					<button class="btn" type="button">Заказать</button>
-				</form>	
+				<button class="btn" type="button">Заказать</button>
 			</li>
 		</ul>
 	</section>
 
 <!-- servies end-->
 
-	<div class="wrapper-about-company-and-feature">
+	<div class="wrapper-about-company-and-feature center">
 
 <!-- about-company start-->
 
-		<section class="about-company">
+		<section class="about-company center">
 			<h2>О компании</h2>
 			<p class="about-company-slogan">
 				Мы — маленькая, но гордая дизайн-студия из Краснодара.
@@ -121,7 +142,7 @@
 
 <!-- feature start-->
 
-		<section class="feature">
+		<section class="feature center">
 			<img class="feature-logo" src="img/nerds_illustration.png" width="360" height="208" alt="Логотип дизайн-студии: Нёрдс">
 			<h2>Наши преимущества</h2>
 			<p class="feature-subtitle">с 2004 года Любим точность во всем:</p>
@@ -162,7 +183,7 @@
 
 <!-- clients start-->
 
-	<section class="clients">
+	<section class="clients center">
 		<h2>Наши клиенты</h2>
 		<ul class="clients-list">
 			<li class="clients-item">
@@ -192,7 +213,7 @@
 
 	<footer class="page-footer">
 		<img class="page-footer-map" src="img/address_map.png" width="1440" height="416" alt="Дизайн-студия NЁRDS находится по адресу наб. Реки Карповки, 5 лит П, Санкт-Петербург">
-		<section class="contacts">
+		<section class="contacts center">
 			<h2>Контакты</h2>
 			<h3 class="contacts-subtitle">Nёrds Design Studio</h3>
 			<p class="contacts-address">
@@ -201,7 +222,7 @@
 			</p>
 			<a class="contacts-btn" href="blank.html">Напишите нам</a>
 		</section>
-		<section class="socials">
+		<section class="socials center">
 			<h2>Ссылки на социальные сети</h2>
 			<div class="wrapper-socials">
 				<ul class="socials-list">
