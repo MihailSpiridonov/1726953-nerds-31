@@ -320,7 +320,6 @@ input[disabled] + .block {
 .filter-btn:active {
     color: var(--opacity-black);
     background: var(--special-darkgrey);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .sorting-btn {
