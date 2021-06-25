@@ -58,8 +58,8 @@
                             <button class="toggle toggle-max" tabindex="0"></button>
                         </div>
                         <div class="wrapper-price-controls">
-                            <label class="filter-cost-text">от<input type="number" min="0" max="100000" step="100" name="min_cost" placeholder="0"></label>
-                            <label class="filter-cost-text">до<input type="number" min="0" max="100000" step="100" name="max_cost" placeholder="150000"></label>
+                            <label class="filter-cost-text">от<input type="number" min="0" max="1000000" step="100" name="min_cost" placeholder="0"></label>
+                            <label class="filter-cost-text">до<input type="number" min="0" max="1000000" step="100" name="max_cost" placeholder="150 000"></label>
                         </div>
                     </fieldset>
                     <fieldset class="filter-grid">
@@ -117,15 +117,15 @@
                 <h2 class="visually-hidden">Выбор способа сортировки</h2>
                 <div class="wrapper-sorting">
                     <p class="sorting-subtitle">Сортировать:</p>
-                        <ul class="sorting-list">
-                            <li class="sorting-item sorting-item-active"><button class="sorting-btn" type="button">По цене</button></li>
-                            <li class="sorting-item"><button class="sorting-btn" type="button">По типу</button></li>
-                            <li class="sorting-item"><button class="sorting-btn" type="button">По названию</button></li>
-                        </ul>
-                        <ul class="sorting-controls-list">
-                            <li class="sorting-controls-item sorting-controls-item-active"><button class="sorting-controls-down" type="button" name="arrow-down" value="down">Вниз</button></li>
-                            <li class="sorting-controls-item"><button class="sorting-controls-up" type="button" name="arrow-up" value="up">Вверх</button></li>
-                        </ul>
+                    <ul class="sorting-list">
+                        <li class="sorting-item sorting-item-active"><button class="sorting-btn" type="button">По цене</button></li>
+                        <li class="sorting-item"><button class="sorting-btn" type="button">По типу</button></li>
+                        <li class="sorting-item"><button class="sorting-btn" type="button">По названию</button></li>
+                    </ul>
+                    <ul class="sorting-controls-list">
+                        <li class="sorting-controls-item sorting-controls-item-active"><button class="sorting-controls-down" type="button" name="arrow-down" value="down"><span class="visually-hidden">Вниз</span></button></li>
+                        <li class="sorting-controls-item"><button class="sorting-controls-up" type="button" name="arrow-up" value="up"><span class="visually-hidden">Вверх</span></button></li>
+                    </ul>
                 </div>
             </section>
 
@@ -142,12 +142,14 @@
                             <div class="pattern-item-path-center"></div>
                             <div class="pattern-item-path-right"></div>
                         </div>
-                        <a class="pattern-link" href="blank.html"><img src="img/sedona.jpg" width="359" height="578" alt="Sedona"></a>
-                        <div class="wrapper-modal">
-                            <h2 class="modal-subtitle">Sedona</h2>
-                            <p class="modal-text">Информационный сайт для туристов</p>
-                            <button class="modal-btn">9 900 ₽</button>
-                        </div>
+                        <a class="pattern-link" href="blank.html">
+                            <img src="img/sedona.jpg" width="359" height="578" alt="Sedona">
+                            <div class="wrapper-modal">
+                                <h2 class="modal-subtitle">Sedona</h2>
+                                <p class="modal-text">Информационный сайт для туристов</p>
+                                <button class="modal-btn">9 900 ₽</button>
+                            </div>
+                        </a>
                     </li>
                     <li class="pattern-item">
                         <div class="pattern-item-shape">
@@ -155,12 +157,14 @@
                             <div class="pattern-item-path-center"></div>
                             <div class="pattern-item-path-right"></div>
                         </div>
-                        <a class="pattern-link" href="blank.html"><img src="img/pink.jpg" width="359" height="578" alt="Pink"></a>
-                        <div class="wrapper-modal">
-                            <h2 class="modal-subtitle">Pink App</h2>
-                            <p class="modal-text">Продуктовый лендингприложения для iOS и Android</p>
-                            <button class="modal-btn">9 900 ₽</button>
-                        </div>
+                        <a class="pattern-link" href="blank.html">
+                            <img src="img/pink.jpg" width="359" height="578" alt="Pink">
+                            <div class="wrapper-modal">
+                                <h2 class="modal-subtitle">Pink App</h2>
+                                <p class="modal-text">Продуктовый лендингприложения для iOS и Android</p>
+                                <button class="modal-btn">9 900 ₽</button>
+                            </div>
+                        </a>
                     </li>
                     <li class="pattern-item">
                         <div class="pattern-item-shape">
@@ -168,12 +172,14 @@
                             <div class="pattern-item-path-center"></div>
                             <div class="pattern-item-path-right"></div>
                         </div>
-                        <a class="pattern-link" href="blank.html"><img src="img/barbershop.jpg" width="359" height="578" alt="Borodinski"></a>
-                        <div class="wrapper-modal">
-                            <h2 class="modal-subtitle">Barbershop</h2>
-                            <p class="modal-text">Сайт салона красоты.Для мужчин, да.</p>
-                            <button class="modal-btn">9 900 ₽</button>
-                        </div>
+                        <a class="pattern-link" href="blank.html">
+                            <img src="img/barbershop.jpg" width="359" height="578" alt="Borodinski">
+                            <div class="wrapper-modal">
+                                <h2 class="modal-subtitle">Barbershop</h2>
+                                <p class="modal-text">Сайт салона красоты.Для мужчин, да.</p>
+                                <button class="modal-btn">9 900 ₽</button>
+                            </div>
+                        </a>
                     </li>
                     <li class="pattern-item">
                         <div class="pattern-item-shape">
@@ -181,12 +187,14 @@
                             <div class="pattern-item-path-center"></div>
                             <div class="pattern-item-path-right"></div>
                         </div>
-                        <a class="pattern-link" href="blank.html"><img src="img/mishka.jpg" width="359" height="578" alt="Mishka"> </a>
-                        <div class="wrapper-modal">
-                            <h2 class="modal-subtitle">Mishka</h2>
-                            <p class="modal-text">Интернет-магазин вязаных игрушек</p>
-                            <button class="modal-btn">9 900 ₽</button>
-                        </div>
+                        <a class="pattern-link" href="blank.html">
+                            <img src="img/mishka.jpg" width="359" height="578" alt="Mishka">
+                            <div class="wrapper-modal">
+                                <h2 class="modal-subtitle">Mishka</h2>
+                                <p class="modal-text">Интернет-магазин вязаных игрушек</p>
+                                <button class="modal-btn">9 900 ₽</button>
+                            </div>
+                        </a>
                     </li>
                     <li class="pattern-item">
                         <div class="pattern-item-shape">
@@ -194,12 +202,14 @@
                             <div class="pattern-item-path-center"></div>
                             <div class="pattern-item-path-right"></div>
                         </div>
-                        <a class="pattern-link" href="blank.html"><img src="img/aplus.jpg" width="359" height="578" alt="Учебное заведение"></a>
-                        <div class="wrapper-modal">
-                            <h2 class="modal-subtitle">A Plus</h2>
-                            <p class="modal-text">Лендинг курсов повышения квалификации</p>
-                            <button class="modal-btn">9 900 ₽</button>
-                        </div>
+                        <a class="pattern-link" href="blank.html">
+                            <img src="img/aplus.jpg" width="359" height="578" alt="Учебное заведение">
+                            <div class="wrapper-modal">
+                                <h2 class="modal-subtitle">A Plus</h2>
+                                <p class="modal-text">Лендинг курсов повышения квалификации</p>
+                                <button class="modal-btn">9 900 ₽</button>
+                            </div>
+                        </a>
                     </li>
                     <li class="pattern-item">
                         <div class="pattern-item-shape">
@@ -207,12 +217,14 @@
                             <div class="pattern-item-path-center"></div>
                             <div class="pattern-item-path-right"></div>
                         </div>
-                        <a class="pattern-link" href="blank.html"><img src="img/kvast.jpg" width="359" height="578" alt="Кваст"></a>
-                        <div class="wrapper-modal">
-                            <h2 class="modal-subtitle">Кваст</h2>
-                            <p class="modal-text">Промо-сайт производителякрафтового кваса</p>
-                            <button class="modal-btn">9 900 ₽</button>
-                        </div>
+                        <a class="pattern-link" href="blank.html">
+                            <img src="img/kvast.jpg" width="359" height="578" alt="Кваст">
+                            <div class="wrapper-modal">
+                                <h2 class="modal-subtitle">Кваст</h2>
+                                <p class="modal-text">Промо-сайт производителякрафтового кваса</p>
+                                <button class="modal-btn">9 900 ₽</button>
+                            </div>
+                        </a>
                     </li>
                 </ul>
                 <ul class="pattern-sheet-list">
