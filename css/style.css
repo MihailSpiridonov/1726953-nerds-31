@@ -37,6 +37,7 @@
     --opacity-black: rgba(0,0,0,0.3);
     --opacity-cpecial-black: rgba(0,0,0,0.6);
     --opacity-shadow-black: rgba(0, 0, 0, 0.4);
+    --modal-shadow-black: rgba(0, 0, 0, 0.25);
     --basic-shadow-black: rgba(0, 0, 0, 0.15);
     --basic-lightblack: #283136;
     --basic-red: #FB565A;
@@ -262,9 +263,7 @@ fieldset {
     z-index: 1;
 }
 
-.controls-sliders-left,
-.controls-sliders-center,
-.controls-sliders-right {
+.controls-sliders {
     position: absolute;
     content: "";
     top: 0px;
@@ -272,6 +271,7 @@ fieldset {
     width: 18px;
     height: 18px;
     border-radius: 50%;
+    border: none;
     background: var(--basic-white);
 }
 
@@ -299,6 +299,17 @@ fieldset {
     border-radius: 50%;
     border: 2px solid var(--basic-slider-grey);
     background: var(--basic-white);
+}
+
+.controls-sliders:hover,
+.controls-sliders:focus {
+    border: 1px solid var(--basic-slider-grey);
+    background: var(--basic-lightgrey);
+}
+
+.controls-sliders:active {
+    border: 1px solid var(--basic-lightblack);
+    background: var(--basic-btn-grey);
 }
 
 .slider-wrapper {
@@ -426,6 +437,21 @@ fieldset {
     box-shadow: 0px 2px 1px var(--basic-shadow-black);
 }
 
+.toggle:hover,
+.toggle:focus {
+    border: 8px solid var(--cpecial-green);
+    background: var(--basic-black);
+    box-shadow: 0px 2px 1px var(--basic-shadow-black);
+    opacity: 0.7;
+}
+
+.toggle:active {
+    border: 8px solid var(--cpecial-darkgreen);
+    background: var(--basic-black);
+    box-shadow: 0px 2px 1px var(--basic-shadow-black);
+    opacity: 1;
+}
+
 .toggle-min {
     position: absolute;
     top: 30px;
@@ -456,13 +482,28 @@ fieldset {
 .filter-cost-text input {
     text-align: center;
     width: 74px;
-    height: 37px;
-    padding: 3px auto;
+    height: 35px;
+    padding: 1px;
     padding-left: 7px;
     margin-left: 11px;
     background: var(--basic-lightgrey);
     border: none;
     border-radius: 3px;
+}
+
+.filter-cost-text:hover input,
+.filter-cost-text:focus input {
+    background: var(--basic-lightgrey);
+    box-shadow: 0px 2px 1px var(--basic-shadow-black);
+    border: none;
+    opacity: 0.7;
+}
+
+.filter-cost-text:active input {
+    background: var(--special-lightgrey);
+    box-shadow: 0px 2px 1px var(--basic-shadow-black);
+    border: none;
+    opacity: 1;
 }
 
 .filter-cost-text input[type="number"]::-webkit-outer-spin-button,
@@ -479,8 +520,6 @@ fieldset {
 .filter-functional-list,
 .sorting-list,
 .sorting-controls-list {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
@@ -568,13 +607,16 @@ fieldset {
 
 .filter-text:hover,
 .filter-text:focus,
-.filter-text input:hover,
-.filter-text input:focus {
+.filter-grid-item input:hover,
+.filter-grid-item input:focus,
+.filter-functional-item input:hover,
+.filter-functional-item input:focus {
     opacity: 1;
 }
 
 .filter-text:active,
-.filter-text input:hover {
+.filter-grid-item input:active,
+.filter-functional-item input:active {
     opacity: 0.3;
 }
 
@@ -623,7 +665,7 @@ input[disabled] + label {
 }
 
 .sorting-subtitle {
-    margin-right: auto;
+    margin-right: 261px;
     margin-bottom: 48px;
 }
 
@@ -632,23 +674,19 @@ input[disabled] + label {
     display: flex;
 }
 
-.sorting-list {
-    margin-right: 47px;
-}
-
 .sorting-item {
     margin: 0;
     padding: 0;
-    margin-right: 25px;
+    margin-right: 26px;
 }
 
 .sorting-item:last-child {
-    margin-right: 0;
+    margin-right: 56px;
 }
 
 
 .sorting-controls-item {
-    margin-right: 18px;
+    margin-right: 15px;
 }
 
 .sorting-controls-item:last-child {
@@ -867,7 +905,7 @@ input[disabled] + label {
 .wrapper-about-company-and-feature {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 360px;
+    grid-template-columns: 1fr 367px;
     gap: 140px;
     width: 1174px;
     margin-bottom: 73px;
@@ -928,10 +966,7 @@ input[disabled] + label {
 /* feature start */
 
 .feature {
-    position: absolute;
-    content: "";
-    left: 807px;
-    top: 10px;
+    margin-top: 10px;
 }
 
 .feature-logo {
@@ -1069,12 +1104,15 @@ input[disabled] + label {
 .pattern-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 55px;
+    gap: 25px 36px;
+    margin-bottom: 53px;
 }
 
 .pattern-item {
     position: relative;
+    min-width: 359px;
+    height: 620px;
+    border: 2px solid var(--special-darkgrey);
 }
 
 .pattern-item-shape {
@@ -1095,7 +1133,7 @@ input[disabled] + label {
     width: 14px;
     height: 14px;
     top: 13px;
-    left: 23px;
+    left: 15px;
     border-radius: 50%;
     background: var(--basic-white);
 }
@@ -1105,7 +1143,7 @@ input[disabled] + label {
     width: 14px;
     height: 14px;
     top: 13px;
-    left: 46px;
+    left: 38px;
     border-radius: 50%;
     background: var(--basic-white);
 }
@@ -1115,7 +1153,7 @@ input[disabled] + label {
     width: 14px;
     height: 14px;
     top: 13px;
-    left: 69px;
+    left: 61px;
     border-radius: 50%;
     background: var(--basic-white);
 }
@@ -1141,7 +1179,16 @@ input[disabled] + label {
     display: inline-block;
 }
 
+.pattern-link:hover {
+    box-shadow: 0px 6px 15px var(--modal-shadow-black);
+}
+
 .pattern-link:hover .wrapper-modal {
+    display: inline-block;
+    position: absolute;
+}
+
+.pattern-link:hover + .wrapper-modal {
     display: inline-block;
     position: absolute;
 }
@@ -1242,13 +1289,13 @@ input[disabled] + label {
 /* contacts start */
 
 .page-footer {
-    padding-bottom: 70px;
+    padding-bottom: 60px;
     position: relative;
 }
 
 .page-footer-map {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .contacts {
@@ -1266,9 +1313,9 @@ input[disabled] + label {
 }
 
 .contacts-subtitle {
-    margin-top: 21px;
+    margin-top: 19px;
     margin-left: 5px;
-    margin-bottom: 24px;
+    margin-bottom: 21px;
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
@@ -1305,6 +1352,16 @@ input[disabled] + label {
     color: var(--basic-white);
     border-radius: 3px;
     background: var(--basic-red);
+}
+
+.contacts-btn:hover,
+.contacts-btn:focus {
+    background: var(--cpecial-red)
+}
+
+.contacts-btn:active {
+    background: var(--cpecial-darkred);
+    color: var(--opacity-white);
 }
 
 /* contacts end */
@@ -1379,11 +1436,11 @@ input[disabled] + label {
 
 .popup {
     width: 960px;
-    position: absolute;
-    content: "";
-    top: -188px;
-    left: 100px;
     z-index: 2;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background: var(--basic-white);
     background: var(--basic-white);
     box-shadow: 0px 20px 40px var(--opacity-shadow-black);
@@ -1460,7 +1517,7 @@ input[disabled] + label {
 
 .popup-field {
     width: 327px;
-    height: 50x;
+    height: 50px;
     margin-top: 10px;
     margin-bottom: 35px;
     color: var(--special-grey);
