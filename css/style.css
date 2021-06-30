@@ -323,6 +323,7 @@ fieldset {
 }
 
 .slider-wrapper-text {
+    width: 540px;
     margin-top: 11px;
 }
 
@@ -330,11 +331,7 @@ fieldset {
     visibility: visible;
 }
 
-.slide-2 {
-    display: none;
-}
-
-.slide-3 {
+.none {
     display: none;
 }
 
@@ -353,6 +350,7 @@ fieldset {
 }
 
 .slider-slogan {
+    max-height: 115px;
     margin-top: 56px;
     margin-bottom: 24px;
 }
@@ -366,6 +364,7 @@ fieldset {
     width: 240px;
     padding: 14px 54px;
     padding-top: 16px;
+    margin-bottom: 70px;
     vertical-align: bottom;
     font-weight: 500;
     font-size: 16px;
@@ -1300,6 +1299,7 @@ input[disabled] + label {
     position: relative;
     width: 100%;
     margin-bottom: 22px;
+    border: 0;
 }
 
 .contacts {
