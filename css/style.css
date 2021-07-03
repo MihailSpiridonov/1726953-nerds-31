@@ -63,6 +63,7 @@
     --basic-grey: #666666;
     --special-grey: #444444;
     --basic-btn-grey: #A6A6A6;
+    --opacity-btn-grey: rgba(166, 166, 166, 0.2);
     --basic-btn-darkgrey: #231F20;
     --basic-white: #ffffff;
     --basic-gradient-white: rgba(0, 1, 1, 0.1);
@@ -775,7 +776,6 @@ input[disabled] + .filter-text {
 .arrow {
     fill: var(--opacity-btn-grey);
     mix-blend-mode: normal;
-    opacity: 0.2;
 }
 
 .arrow:hover,
@@ -786,13 +786,12 @@ input[disabled] + .filter-text {
 }
 
 .sorting-controls:active .arrow {
-    color: var(--basic-btn-darkgrey);
     fill: var(--basic-btn-darkgrey); 
 }
 
-.arrow-active path{
-    color: var(--basic-btn-darkgrey);
+.sorting-controls-active .arrow{
     fill: var(--basic-btn-darkgrey); 
+    opacity: 1;
 }
 
 /* filter end */  /* sorting end */
@@ -1381,10 +1380,12 @@ input[disabled] + .filter-text {
 }
 
 .contacts-tel:focus {
-    border: 1px solid var(--basic-grey);
+    outline: 1px solid var(--basic-grey);
 }
 
 .contacts-tel:active {
+    text-decoration: none;
+    outline: none;
     opacity: 0.3;
 }
 
@@ -1393,8 +1394,8 @@ input[disabled] + .filter-text {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 219px;
-    height: 50px;
+    min-width: 219px;
+    min-height: 50px;
     margin-left: 5px;
     margin-bottom: 15px;
     line-height: 18px;
@@ -1426,6 +1427,7 @@ input[disabled] + .filter-text {
 
 .socials-list {
     margin: 37px 0;
+    margin-top: 41px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -1570,8 +1572,8 @@ input[disabled] + .filter-text {
 }
 
 .popup-field {
-    width: 328px;
-    height: 18px;
+    width: 360px;
+    height: 51px;
     margin-top: 6px;
     margin-bottom: 30px;
 }
@@ -1582,10 +1584,10 @@ input[disabled] + .filter-text {
 }
 
 .popup-textarea {
-    width: 729px;
-    min-height: 85px;
+    width: 760px;
+    min-height: 118px;
     margin-top: 7px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .popup-field:hover,
