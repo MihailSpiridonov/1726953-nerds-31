@@ -418,7 +418,7 @@ img {
 
 /* filter start */  /* sorting start */
 
-.wrapper-sorting-and-filter {
+.wrapper-section-group {
     display: grid;
     grid-template-columns: 260px 1fr;
     gap: 141px;
@@ -917,7 +917,7 @@ input[disabled] + .filter-text {
 
 /* about-company start */
 
-.wrapper-about-company-and-feature {
+.wrapper-two-sections {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 367px;
