@@ -1538,22 +1538,13 @@ input[disabled] + .filter-text {
 
 .popup {
     width: 960px;
-    background: var(--basic-white);
-    box-shadow: 0px 20px 40px var(--opacity-shadow-black);
-    z-index: 3;
-}
-
-.popup-fixed {
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-
-.popup-absolute {
-    position: absolute;
-    left: 20%;
-    top: -20%;
+    background: var(--basic-white);
+    box-shadow: 0px 20px 40px var(--opacity-shadow-black);
+    z-index: 3;
 }
 
 .popup-wrapper {
@@ -1702,19 +1693,19 @@ input[disabled] + .filter-text {
 
 @keyframes bounce {
     0% {
-      transform: translateY(-2000px);
+      transform: translate(-50%, -2000px);
     }
   
     70% {
-      transform: translateY(30px);
+      transform: translate(-50%, 30px);
     }
   
     90% {
-      transform: translateY(-10px);
+      transform: translate(-50%, -10px);
     }
   
     100% {
-      transform: translateY(0);
+      transform: translate(-50%, 50%);
     }
 }
 
@@ -1726,7 +1717,7 @@ input[disabled] + .filter-text {
 @keyframes shake {
     0%,
     100% {
-      transform: translateX(0);
+      transform: translate(-50%, -50%);
     }
   
     10%,
@@ -1734,14 +1725,14 @@ input[disabled] + .filter-text {
     50%,
     70%,
     90% {
-      transform: translateX(-10px);
+      transform: translate(-48%, -50%);
     }
   
     20%,
     40%,
     60%,
     80% {
-      transform: translateX(10px);
+      transform: translate(-52%, -50%);
     }
 }
 
