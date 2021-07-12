@@ -6,26 +6,28 @@ const loginPopup = popup.querySelector(".popup-login");
 const emailPopup = popup.querySelector(".popup-email");
 const btnPopup = popup.querySelector(".popup-btn");
 
-let isStorageSupport = true;
+/*let isStorageSupport = true;
 let storage = "";
 
 try {
   storage = localStorage.getItem("login");
 } catch (err) {
   isStorageSupport = false;
-}
+}*/
 
 openPopup.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.remove("visually-hidden");
+    popup.classList.remove("popup-fixed");
+    popup.classList.add("popup-absolute");
     popup.classList.add("modal-show");
 
-    if (storage) {
-        loginLogin.value = storage;
-        loginPassword.focus();
+    /*if (storage) {
+        loginPopup.value = storage;
+        emailPopup.focus();
     } else {
         loginPopup.focus();
-    }
+    }*/
 });
 
 closePopup.addEventListener("click", function(evt) {
@@ -39,19 +41,24 @@ btnPopup.addEventListener("click", function(evt) {
     if (!loginPopup.value || !emailPopup.value) {
     evt.preventDefault();
     popup.classList.add("modal-error");
-    } else {
+    } /*else {
         if (isStorageSupport) {
             localStorage.setItem("login", loginPopup.value);
         }
-    }
+    }*/
 });
 
-formPopup.addEventListener("submit", function(evt) {    
+/*formPopup.addEventListener("submit", function(evt) {    
     if (!loginPopup.value || !emailPopup.value) {
     evt.preventDefault();
+    popup.classList.add("modal-error");
     } else {
+        if (emailPopup.invalid) {
+            evt.preventDefault();
+            popup.classList.add("modal-error");
+        }
         if (isStorageSupport) {
             localStorage.setItem("login", loginPopup.value);
         }
     }
-}); 
+});*/
